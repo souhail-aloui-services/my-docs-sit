@@ -7,29 +7,18 @@ title: Goldydocs
 contentDir: content/en
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
-# Useful when translating.
 enableMissingTranslationPlaceholders: true
 
 enableRobotsTXT: true
-
-# Will give values to .Lastmod etc.
 enableGitInfo: true
 
-# Comment out to disable taxonomies in Docsy
-# disableKinds: [taxonomy]
-
-# You can add your own taxonomies
 taxonomies:
   tag: tags
   category: categories
 
-# Highlighting config
 pygmentsCodeFences: true
 pygmentsUseClasses: false
-# Use the new Chroma Go highlighter in Hugo.
 pygmentsUseClassic: false
-# pygmentsOptions: "linenos=table"
-# See https://help.farbox.com/pygments.html
 pygmentsStyle: tango
 
 mediaTypes:
@@ -44,11 +33,9 @@ outputFormats:
     notAlternative: true
     root: true
 
-# Configure how URLs look like per section.
 permalinks:
   blog: /:section/:year/:month/:day/:slugorcontentbasename
 
-# Image processing configuration.
 imaging:
   resampleFilter: CatmullRom
 
@@ -61,6 +48,7 @@ languages:
     title: "SOUHAIL ALAOUI Docs"
     params:
       description: A Docsy example site
+    rtl: true
   # cSpell:disable
   no:
     label: Norsk
@@ -91,7 +79,6 @@ markup:
   highlight:
     style: tango
     noClasses: false
-    # guessSyntax: true
 
 outputs:
   home: [HTML, print, RSS, redirects]
@@ -104,7 +91,6 @@ params:
     taxonomyPageHeader: [tags, categories]
 
   privacy_policy: https://policies.google.com/privacy
-
   version_menu: Releases
   archived_version: false
   version: 0.16.1-dev
